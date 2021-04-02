@@ -1,0 +1,17 @@
+{
+  "db_user": "root",
+  "db_password": "123456",
+  "db_host" :  "127.0.0.1",
+  "db_port": 3306,
+  "db_name": "sys",
+  "db_max_conn": 100,
+  "db_min_conn": 10,
+  "db_conn_duration": 600,
+  "chains": [{
+    "chain_id": 200,
+    "nodes": ["ws://127.0.0.1:9977"]
+  }, {
+    "chain_id": 300,
+    "nodes": ["ws://127.0.0.1:9988"]
+  }]
+}

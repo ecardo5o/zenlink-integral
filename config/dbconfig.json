@@ -1,0 +1,61 @@
+{
+  "db_user": "root",
+  "db_password": "123456",
+  "db_host" :  "127.0.0.1",
+  "db_port": 3306,
+  "db_name": "sys",
+  "db_max_conn": 100,
+  "db_min_conn": 10,
+  "db_conn_duration": 600,
+  "chains": [{
+    "chain_id": 200,
+    "type": "zenlink",
+    "nodes": ["ws://127.0.0.1:9977"]
+  }, {
+    "chain_id": 300,
+    "type": "zenlink",
+    "nodes": ["ws://127.0.0.1:9988"]
+  }],
+  "token_list": [
+    {
+      "chain_id": 200,
+      "module_index": 2,
+      "asset_index": 0,
+      "decimal": 15,
+      "symbol": "ZLK",
+      "name": "zenlink token"
+    },
+    {
+      "chain_id": 200,
+      "module_index": 8,
+      "asset_index": 0,
+      "decimal": 8,
+      "symbol": "XYZ",
+      "name": "asset 0"
+    },
+    {
+      "chain_id": 300,
+      "module_index": 2,
+      "asset_index": 0,
+      "decimal": 8,
+      "symbol": "PCX",
+      "name": "zenlink token"
+    },
+    {
+      "chain_id": 300,
+      "module_index": 8,
+      "asset_index": 0,
+      "decimal": 8,
+      "symbol": "ABC",
+      "name": "asset 0"
+    },
+    {
+      "chain_id": 300,
+      "module_index": 9,
+      "asset_index": 1,
+      "decimal": 8,
+      "symbol": "ZLK_PCX LP",
+      "name": "zenlink lp"
+    }
+  ]
+}

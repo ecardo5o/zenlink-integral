@@ -1,0 +1,10 @@
+{
+  "logger":  "zap",
+  "log_level":  0,
+  "project": "zenlink",
+  "name": "scan",
+  "log_dir": "./log",
+  "max_day": 7,
+  "rotate_seconds": 3600,
+  "extname":""
+}
